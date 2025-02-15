@@ -40,15 +40,5 @@ This project relies on several Python libraries, as listed in `reqs.txt`. Some k
 
 For a full list, check `reqs.txt`.
 
-## Contributing
 
-If you would like to contribute, please fork the repository and submit a pull request.
-
-## License
-
-Specify the license under which your project is distributed (e.g., MIT, GPL).
-
-## Contact
-
-For any inquiries, feel free to reach out to [your contact email or GitHub profile].
 
