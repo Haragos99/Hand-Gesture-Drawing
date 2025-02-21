@@ -57,7 +57,7 @@ base_options = python.BaseOptions(model_asset_path='my_gesture_recognizer.task')
 options = vision.GestureRecognizerOptions(base_options=base_options)
 recognizer = vision.GestureRecognizer.create_from_options(options)
 
-input_video_path = "input.mp4"
+input_video_path = "M.mp4"
 cap = cv2.VideoCapture(input_video_path)
 
 # Get video properties
@@ -66,7 +66,7 @@ frame_height = int(cap.get(4))
 fps = int(cap.get(cv2.CAP_PROP_FPS))
 
 # Define output video writer
-output_video_path = "output.mp4"
+output_video_path = "K.mp4"
 fourcc = cv2.VideoWriter_fourcc(*'mp4v')  # Codec
 out = cv2.VideoWriter(output_video_path, fourcc, fps, (frame_width, frame_height))
 
@@ -98,13 +98,20 @@ while cap.isOpened():
     hand_landmarks = recognition_result.hand_landmarks
     results = ((top_gesture, hand_landmarks))
     annotated_frame = image_with_gesture_and_hand_landmarks(image, results)
-    out.write(annotated_frame)
+    #out.write(annotated_frame)
     if frame_count >= fps:
       elapsed_time = time.time() - start_time  # Time taken to render 1 second of video
       print(f"Speed of render: {elapsed_time:.2f} sec")
 
       frame_count = 0  # Reset frame counter
       start_time = time.time()  # Reset timer
+
+
+    cv2.imshow('Camera Feed', annotated_frame)
+
+    # Press 'q' to exit the loop
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
 
 
 # Release resources
