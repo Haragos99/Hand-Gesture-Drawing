@@ -13,3 +13,4 @@ debug
 release
 .vs
 venv
+model_directory

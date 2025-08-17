@@ -53,11 +53,11 @@ def image_with_gesture_and_hand_landmarks(image, result):
     return annotated_image
 
 
-base_options = python.BaseOptions(model_asset_path='my_gesture_recognizer.task')
+base_options = python.BaseOptions(model_asset_path='models\\my_gesture_recognizer.task')
 options = vision.GestureRecognizerOptions(base_options=base_options)
 recognizer = vision.GestureRecognizer.create_from_options(options)
 
-input_video_path = "M.mp4"
+input_video_path = "resorce\\M.mp4"
 cap = cv2.VideoCapture(input_video_path)
 
 # Get video properties

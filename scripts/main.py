@@ -51,8 +51,8 @@ def draw_landmarks_on_image(rgb_image, detection_result):
 
 
 
-base_options = python.BaseOptions(model_asset_path='hand_landmarker.task')
-options = vision.HandLandmarkerOptions(base_options=base_options,num_hands=2)
+base_options = python.BaseOptions(model_asset_path='models\\hand_landmarker.task')
+options = vision.HandLandmarkerOptions(base_options = base_options,num_hands=2)
 detector = vision.HandLandmarker.create_from_options(options)
 
 def draw_image(image):
@@ -129,9 +129,10 @@ if not cap.isOpened():
     print("Error: Could not open camera.")
     exit()
 
-
+frame_count = 0
 panel= np.full((480,640,3), 255, dtype=np.uint8)
 x = None
+start_time = time.time()  # Start measuring time
 y = None
 while True:
     # Capture frame-by-frame
@@ -140,6 +141,7 @@ while True:
     if not ret:
         print("Error: Failed to capture image.")
         break
+    frame_count += 1
     bbox_array = np.zeros([height,width,4], dtype=np.uint8)    
     frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
     mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame_rgb)
@@ -155,6 +157,8 @@ while True:
     dst = cv2.addWeighted(bbox_array, alpha , panel_, 1-alpha, 0) 
     #bbox_array [:,:,3]= panel
     cv2.imshow('Camera Feed', dst)
+    if time.time() - start_time < 5:
+       print(f"Speed of render: {frame_count} frame")
 
     # Press 'q' to exit the loop
     if cv2.waitKey(1) & 0xFF == ord('q'):
