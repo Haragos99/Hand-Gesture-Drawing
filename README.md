@@ -1,25 +1,50 @@
-#  Hand Gesture Recognition & Finger Drawing 
+# 🖐️ Hand Gesture Recognition & Finger Drawing  
 
-This project combines **hand gesture recognition** and **real-time finger drawing** using [MediaPipe](https://mediapipe.dev/), OpenCV, and NumPy.  
+This project combines **hand gesture recognition** with a **real-time finger drawing tool** built using [MediaPipe](https://mediapipe.dev/), OpenCV, and NumPy.  
 
-- Recognize gestures: **Rock**, **Paper**, **Scissors**, or **None**  
-- Draw with your **index finger** directly on the livestream video feed  
+With this demo, you can:  
+- Recognize hand gestures (**Rock**, **Paper**, **Scissors**, or **None**)  
+- Draw on the **live camera feed** using just your index finger  
 
-It’s an interactive demo that can be used for gesture-based games, digital scribbling, or live annotations.  
+It’s designed as an interactive prototype for gesture-based games, digital whiteboarding, or live annotations.  
 
 ---
 
-## Features
+## ✨ Features
 
 - 🎮 **Rock-Paper-Scissors Recognition**  
-  Detects hand gestures and classifies them as Rock, Paper, Scissors, or None.  
-  *(Depends on your trained model for classification accuracy.)*  
+  Detects hand gestures and classifies them as **Rock**, **Paper**, **Scissors**, or **None**.  
+  *(Accuracy depends on your trained recognition model.)*  
 
--  **Finger Drawing Tool**  
-  Tracks your index finger in the webcam feed and lets you draw on the screen in real time.  
+- ✏️ **Finger Drawing on Live Feed**  
+  Tracks the index finger in real time, enabling drawing directly on the webcam stream.  
 
-- 🎥 **Live Webcam Feed**  
-  Processes your camera stream continuously, overlays drawings, and displays recognition results.  
+- 🎥 **Continuous Live Video**  
+  Uses your webcam to process frames, overlay gesture recognition, and display finger drawings instantly.  
+
+---
+
+## ⚙️ Requirements & Installation  
+
+### Prerequisites  
+- Python **3.8+**  
+- A working webcam  
+
+### Dependencies  
+This project relies on the following Python libraries:  
+- [MediaPipe](https://pypi.org/project/mediapipe/) – Hand tracking & gesture recognition  
+- [OpenCV](https://pypi.org/project/opencv-python/) – Video capture & image processing  
+- [NumPy](https://pypi.org/project/numpy/) – Numerical operations  
+
+### Installation  
+
+Clone the repository and install the requirements:  
+
+```bash
+git clone https://github.com/your-username/hand-gesture-drawing.git
+cd hand-gesture-drawing
+pip install -r requirements.txt
+
 
 ---
 
