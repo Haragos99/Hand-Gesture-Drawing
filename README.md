@@ -6,7 +6,7 @@ With this demo, you can:
 - Recognize hand gestures (**Rock**, **Paper**, **Scissors**, or **None**)  
 - Draw on the **live camera feed** using just your index finger  
 
-It’s designed as an interactive prototype for gesture-based games, digital whiteboarding, or live annotations.  
+It’s designed as an interactive prototype for digital whiteboarding.  
 
 ---
 
@@ -23,6 +23,10 @@ It’s designed as an interactive prototype for gesture-based games, digital whi
   Uses your webcam to process frames, overlay gesture recognition, and display finger drawings instantly.  
 
 ---
+
+# Result:
+
+![Alt text]([https://github.com/Haragos99/ProgressiveMesh/blob/main/pictures/mesh3.png](https://github.com/Haragos99/Hand-Gesture-Drawing/blob/master/resorce/draw.gif))
 
 ##  Requirements & Installation  
 
