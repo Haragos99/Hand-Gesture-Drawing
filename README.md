@@ -17,7 +17,7 @@ Ensure you have Python installed. You can download it from [python.org](https://
 Use the following command to install all required dependencies:
 
 ```sh
-pip install -r reqs.txt
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -38,7 +38,7 @@ This project relies on several Python libraries, as listed in `reqs.txt`. Some k
 - Matplotlib (`matplotlib`)
 - Streamlit (`streamlit`)
 
-For a full list, check `reqs.txt`.
+For a full list, check `requirements.txt`.
 
 
 
