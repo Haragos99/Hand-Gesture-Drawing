@@ -127,8 +127,8 @@ def process_video(input_path: Path, output_path: Path, model_path: Path):
 
 if __name__ == "__main__":
     base_dir = Path("models")
-    video_input = Path("resorce/M.mp4")
-    video_output = Path("K.mp4")
+    video_input = Path("resorce/video.mp4")
+    video_output = Path("output.mp4")
     model_file = base_dir / "my_gesture_recognizer.task"
 
     process_video(video_input, video_output, model_file)
