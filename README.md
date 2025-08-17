@@ -1,44 +1,32 @@
-# Project Title
+# ✋ Hand Gesture Recognition & Finger Drawing 🖊️
 
-## Description
+This project combines **hand gesture recognition** and **real-time finger drawing** using [MediaPipe](https://mediapipe.dev/), OpenCV, and NumPy.  
 
-A brief description of your project goes here. Explain what it does and its main features.
+- Recognize gestures: **Rock**, **Paper**, **Scissors**, or **None**  
+- Draw with your **index finger** directly on the livestream video feed  
 
-## Installation
+It’s an interactive demo that can be used for gesture-based games, digital scribbling, or live annotations.  
 
-To set up and run this project, follow these steps:
+---
 
-### Prerequisites
+## 📌 Features
 
-Ensure you have Python installed. You can download it from [python.org](https://www.python.org/).
+- 🎮 **Rock-Paper-Scissors Recognition**  
+  Detects hand gestures and classifies them as Rock, Paper, Scissors, or None.  
+  *(Depends on your trained model for classification accuracy.)*  
 
-### Install Dependencies
+- 🖊️ **Finger Drawing Tool**  
+  Tracks your index finger in the webcam feed and lets you draw on the screen in real time.  
 
-Use the following command to install all required dependencies:
+- 🎥 **Live Webcam Feed**  
+  Processes your camera stream continuously, overlays drawings, and displays recognition results.  
 
-```sh
-pip install -r requirements.txt
-```
+---
 
-## Usage
+## ⚙️ Installation
 
-Provide instructions on how to use your project. You can include example commands or code snippets.
+Clone the repository:
 
-```sh
-python main.py
-```
-
-## Dependencies
-
-This project relies on several Python libraries, as listed in `reqs.txt`. Some key dependencies include:
-
-- OpenCV (`opencv-contrib-python`)
-- NumPy (`numpy`)
-- Pandas (`pandas`)
-- Matplotlib (`matplotlib`)
-- Streamlit (`streamlit`)
-
-For a full list, check `requirements.txt`.
-
-
-
+```bash
+git clone https://github.com/your-username/gesture-recognition.git
+cd gesture-recognition
