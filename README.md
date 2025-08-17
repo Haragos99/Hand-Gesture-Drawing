@@ -1,4 +1,4 @@
-# 🖐️ Hand Gesture Recognition & Finger Drawing  
+# Hand Gesture Recognition & Finger Drawing  
 
 This project combines **hand gesture recognition** with a **real-time finger drawing tool** built using [MediaPipe](https://mediapipe.dev/), OpenCV, and NumPy.  
 
@@ -10,21 +10,21 @@ It’s designed as an interactive prototype for gesture-based games, digital whi
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🎮 **Rock-Paper-Scissors Recognition**  
+-  **Rock-Paper-Scissors Recognition**  
   Detects hand gestures and classifies them as **Rock**, **Paper**, **Scissors**, or **None**.  
   *(Accuracy depends on your trained recognition model.)*  
 
-- ✏️ **Finger Drawing on Live Feed**  
+-  **Finger Drawing on Live Feed**  
   Tracks the index finger in real time, enabling drawing directly on the webcam stream.  
 
-- 🎥 **Continuous Live Video**  
+-  **Continuous Live Video**  
   Uses your webcam to process frames, overlay gesture recognition, and display finger drawings instantly.  
 
 ---
 
-## ⚙️ Requirements & Installation  
+##  Requirements & Installation  
 
 ### Prerequisites  
 - Python **3.8+**  
@@ -56,7 +56,7 @@ Clone the repository:
 git clone https://github.com/your-username/gesture-recognition.git
 cd gesture-recognition
 ```
-## 📦 Requirements
+##  Requirements
 
 This project uses Python and a few key libraries:
 
