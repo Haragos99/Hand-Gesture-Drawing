@@ -40,11 +40,11 @@ This project relies on the following Python libraries:
 
 Clone the repository and install the requirements:  
 
-```bash
+```
 git clone https://github.com/your-username/hand-gesture-drawing.git
 cd hand-gesture-drawing
 pip install -r requirements.txt
-
+```
 
 ---
 
@@ -55,7 +55,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/your-username/gesture-recognition.git
 cd gesture-recognition
-
+```
 ## 📦 Requirements
 
 This project uses Python and a few key libraries:
@@ -70,4 +70,4 @@ To install all dependencies, run:
 
 ```bash
 pip install -r requirements.txt
-
+```
