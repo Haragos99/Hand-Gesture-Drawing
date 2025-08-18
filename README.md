@@ -26,7 +26,9 @@ It’s designed as an interactive prototype for digital whiteboarding.
 
 # Result:
 
+### Finger Drawing on Live Feed
 ![Alt text](https://github.com/Haragos99/Hand-Gesture-Drawing/blob/master/resorce/draw.gif)
+### Rock-Paper-Scissors Recognition
 ![Alt text](https://github.com/Haragos99/Hand-Gesture-Drawing/blob/master/resorce/RPS.gif)
 
 ##  Requirements & Installation  
