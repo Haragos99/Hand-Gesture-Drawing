@@ -27,6 +27,7 @@ It’s designed as an interactive prototype for digital whiteboarding.
 # Result:
 
 ![Alt text](https://github.com/Haragos99/Hand-Gesture-Drawing/blob/master/resorce/draw.gif)
+![Alt text](https://github.com/Haragos99/Hand-Gesture-Drawing/blob/master/resorce/RPS.gif)
 
 ##  Requirements & Installation  
 
